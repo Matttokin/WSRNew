@@ -8,9 +8,14 @@ namespace WSR.Controllers
 {
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Главная страница
+        /// </summary>
+        /// <returns></returns>
+        [Authorize]
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Главная страница";
 
             return View();
         }

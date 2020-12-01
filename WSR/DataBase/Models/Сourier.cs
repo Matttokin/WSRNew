@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace WSR.DataBase.Models
 {
     public class Сourier
     {
+        [Required(ErrorMessage = "Заполните поле")]
         public int Id { get; set; }
         public User User { get; set; }
         public int UserId { get; set; }
